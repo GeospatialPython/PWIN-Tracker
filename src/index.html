@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PWIN Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="app-header-left">
+      <button id="homeButton" class="icon-button" title="Home" aria-label="Home">⌂</button>
+      <div>
+        <h1>PWIN Tracker</h1>
+        <p>Proposal probability of win assessment</p>
+      </div>
+    </div>
+    <img class="brand-logo" src="../assets/tek-annoa-logo.jpg" alt="Tek Annoa logo" />
+  </header>
+
+  <main id="app"></main>
+
+  <template id="homeViewTemplate">
+    <section class="home-grid">
+      <button class="choice-card" data-action="add">
+        <span class="choice-icon">＋</span>
+        <span class="choice-title">Add New Opportunity</span>
+        <span class="choice-text">Create a new opportunity and capture an initial PWIN assessment.</span>
+      </button>
+      <button class="choice-card" data-action="update">
+        <span class="choice-icon">↺</span>
+        <span class="choice-title">Update Opportunity PWIN</span>
+        <span class="choice-text">Review previous updates and add another row based on new information.</span>
+      </button>
+    </section>
+  </template>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
