@@ -1,6 +1,6 @@
 # PWIN Tracker
 
-Electron desktop app for tracking proposal PWIN assessments.
+Electron desktop app for tracking proposal win percentages (PWIN).
 
 ## Run in development
 
